@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "honkit build",
-    "serve": "honkit serve"
+    "serve": "honkit serve",
+    "deploy": "firebase deploy"
   },
   "author": "",
   "license": "ISC",
