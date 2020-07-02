@@ -1,0 +1,15 @@
+{
+  "name": "vue-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "honkit build",
+    "serve": "honkit serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "honkit": "^3.5.0"
+  }
+}
