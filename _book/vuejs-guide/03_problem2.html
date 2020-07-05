@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Vue.js 基礎 · HonKit</title>
+        <title>練習問題 2 · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.5.0">
@@ -45,10 +45,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="01_guide.html" />
+    <link rel="next" href="../vuejs-spa/introduction.html" />
     
     
-    <link rel="prev" href="00_introduction.html" />
+    <link rel="prev" href="02_problem1.html" />
     
 
     </head>
@@ -110,7 +110,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="01_guide.html">
+        <li class="chapter " data-level="2.2" data-path="01_guide.html">
             
                 <a href="01_guide.html">
             
@@ -363,7 +363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="03_problem2.html">
+        <li class="chapter active" data-level="2.4" data-path="03_problem2.html">
             
                 <a href="03_problem2.html">
             
@@ -446,7 +446,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Vue.js 基礎</a>
+        <a href=".." >練習問題 2</a>
     </h1>
 </div>
 
@@ -461,98 +461,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vuejs-&#x306E;&#x57FA;&#x790E;">Vue.js &#x306E;&#x57FA;&#x790E;</h1><p>&#x3053;&#x306E;&#x7AE0;&#x304B;&#x3089;&#x3001;Vue.js &#x306E;&#x57FA;&#x672C;&#x3092;&#x5B66;&#x3073;&#x307E;&#x3059;&#x3002;</p><h1 id="vuejs-&#x306E;&#x5C0E;&#x5165;">Vue.js &#x306E;&#x5C0E;&#x5165;</h1><p>CDN &#x3067; new Vue &#x3059;&#x308B;&#x3002;</p><h2 id="hello-world">Hello World</h2><p>TODO &#x66F8;&#x304F;</p><!-- CDNでHello Worldのサンプルコード
-dataとv-modelだけのサンプルコードにする
-次の章でサンプルコードの解説を行う -->
-
-
-<h1 id="vue-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;">Vue &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;</h1><p>TODO &#x66F8;&#x304F;</p><p>&#x5168;&#x3066;&#x306E; Vue &#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3; &#x306F;&#x3001;Vue &#x95A2;&#x6570;&#x3067;&#x65B0;&#x3057;&#x3044; Vue &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x3063;&#x3066;&#x8D77;&#x52D5;&#x3055;&#x308C;&#x308B;&#x3088;&#x3002;</p><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">new</span> Vue({
-  <span class="hljs-comment">// &#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;</span>
-});</code></pre>
-<p>&#x30B3;&#x30F3;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30BF;&#x306B;&#x306F;&#x5F15;&#x6570;&#x306B;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x6E21;&#x305B;&#x308B;&#x3088;&#x3002;
-&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306F;&#x3001;UI &#x306E;&#x72B6;&#x614B;(&#x30C7;&#x30FC;&#x30BF;)&#x3001;&#x72B6;&#x614B;&#x3068; DOM &#x30DE;&#x30C3;&#x30D4;&#x30F3;&#x30B0;&#x306E;&#x5B9A;&#x7FA9;(&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;)&#x3001;&#x30DE;&#x30A6;&#x30F3;&#x30C8;&#x3055;&#x305B;&#x308B; DOM &#x8981;&#x7D20;&#x3001;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x304C;&#x767A;&#x706B;&#x3057;&#x305F;&#x3068;&#x304D;&#x306B;&#x547C;&#x3073;&#x51FA;&#x3059;&#x632F;&#x308B;&#x821E;&#x3044;(&#x30E1;&#x30BD;&#x30C3;&#x30C9;)&#x306A;&#x3069;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p><!-- 上記サンプルコードのdataプロパティとv-modelについて軽く説明する。 -->
-
-
-<p>&#x4ED6;&#x306E;&#x4E3B;&#x8981;&#x306A;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x306F;&#x6B21;&#x56DE;&#x306E;&#x8A18;&#x4E8B;&#x306B;&#x3066;&#x8AAC;&#x660E;&#x3057;&#x307E;&#x3059;&#x3002;</p><h1 id="dom-&#x3078;&#x306E;-vue-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30DE;&#x30A6;&#x30F3;&#x30C8;el">DOM &#x3078;&#x306E; Vue &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30DE;&#x30A6;&#x30F3;&#x30C8;(el)</h1><!-- elプロパティについて書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="ui-&#x306E;&#x72B6;&#x614B;data">UI &#x306E;&#x72B6;&#x614B;(data)</h1><!-- dataプロパティについて書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x69CB;&#x6587;">&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x69CB;&#x6587;</h1><!-- テンプレート構文について書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="&#x30E1;&#x30BD;&#x30C3;&#x30C9;">&#x30E1;&#x30BD;&#x30C3;&#x30C9;</h1><!-- メソッドについて書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="&#x7B97;&#x51FA;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;">&#x7B97;&#x51FA;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;</h1><!-- 算出プロパティについて書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="&#x30AF;&#x30E9;&#x30B9;&#x3068;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C7;&#x30A3;&#x30F3;&#x30B0;">&#x30AF;&#x30E9;&#x30B9;&#x3068;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C7;&#x30A3;&#x30F3;&#x30B0;</h1><p>v-bind
-TODO &#x66F8;&#x304F;</p><h1 id="&#x6761;&#x4EF6;&#x4ED8;&#x304D;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;">&#x6761;&#x4EF6;&#x4ED8;&#x304D;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;</h1><p>v-if
-v-show
-TODO &#x66F8;&#x304F;</p><h1 id="&#x30EA;&#x30B9;&#x30C8;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;">&#x30EA;&#x30B9;&#x30C8;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;</h1><p>v-for
-TODO &#x66F8;&#x304F;</p><h1 id="&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x30CF;&#x30F3;&#x30C9;&#x30EA;&#x30F3;&#x30B0;">&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x30CF;&#x30F3;&#x30C9;&#x30EA;&#x30F3;&#x30B0;</h1><p>v-on
-TODO &#x66F8;&#x304F;</p><h1 id="&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x5165;&#x529B;&#x30D0;&#x30A4;&#x30F3;&#x30C7;&#x30A3;&#x30F3;&#x30B0;">&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x5165;&#x529B;&#x30D0;&#x30A4;&#x30F3;&#x30C7;&#x30A3;&#x30F3;&#x30B0;</h1><p>v-model
-TODO &#x66F8;&#x304F;</p><h1 id="&#x30E9;&#x30A4;&#x30D5;&#x30B5;&#x30A4;&#x30AF;&#x30EB;&#x30D5;&#x30C3;&#x30AF;">&#x30E9;&#x30A4;&#x30D5;&#x30B5;&#x30A4;&#x30AF;&#x30EB;&#x30D5;&#x30C3;&#x30AF;</h1><!-- 全部書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x57FA;&#x672C;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x57FA;&#x672C;</h1><h2 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3068;&#x306F;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3068;&#x306F;</h2><!-- コンポーネントについて書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h2 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x767B;&#x9332;&#x30B0;&#x30ED;&#x30FC;&#x30D0;&#x30EB;&#x3068;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x5229;&#x7528;&#x65B9;&#x6CD5;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x767B;&#x9332;(&#x30B0;&#x30ED;&#x30FC;&#x30D0;&#x30EB;)&#x3068;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x5229;&#x7528;&#x65B9;&#x6CD5;</h2><!-- Vue.component()でコンポーネントを登録する方法を書く。
-単一ファイルコンポーネント形式は後ほどの記事で書くのでここでは触れない。 -->
-
-
-<!-- コンポーネントを利用する方法を書 -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h2 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x767B;&#x9332;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x3068;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x5229;&#x7528;&#x65B9;&#x6CD5;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x767B;&#x9332;(&#x30B9;&#x30B3;&#x30FC;&#x30D7;)&#x3068;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x5229;&#x7528;&#x65B9;&#x6CD5;</h2><!-- スコープを切ってコンポーネントを登録する方法を書く。 -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><!-- コンポーネントを利用する方法を書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x9593;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x3084;&#x308A;&#x53D6;&#x308A;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x9593;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x3084;&#x308A;&#x53D6;&#x308A;</h1><h2 id="&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x95A2;&#x4FC2;">&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x95A2;&#x4FC2;</h2><!-- 親子関係があるということをコード付きで説明する -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><!-- event up props down -->
-
-
-<h2 id="&#x89AA;&#x304B;&#x3089;&#x5B50;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x53D7;&#x3051;&#x6E21;&#x3057;">&#x89AA;&#x304B;&#x3089;&#x5B50;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x53D7;&#x3051;&#x6E21;&#x3057;</h2><!-- props -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h2 id="&#x5B50;&#x304B;&#x3089;&#x89AA;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x53D7;&#x3051;&#x6E21;&#x3057;">&#x5B50;&#x304B;&#x3089;&#x89AA;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x53D7;&#x3051;&#x6E21;&#x3057;</h2><!-- event -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="&#x5358;&#x4E00;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;">&#x5358;&#x4E00;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;</h1><h2 id="&#x5358;&#x4E00;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;single-file-components&#x3068;&#x306F;">&#x5358;&#x4E00;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;(single file components)&#x3068;&#x306F;</h2><!-- 単一ファイルコンポーネントは以下SFCと略します。 -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><!-- グローバルコンポーネントのデメリットを書きだす。 -->
-
-
-<p>&#x30B0;&#x30ED;&#x30FC;&#x30D0;&#x30EB;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x30C7;&#x30E1;&#x30EA;&#x30C3;&#x30C8;&#x3092;&#x89E3;&#x6C7A;&#x3057;&#x305F;&#x3082;&#x306E;&#x304C; SFC &#x3067;&#x3059;&#x3002;</p><h2 id="&#x7279;&#x5FB4;">&#x7279;&#x5FB4;</h2><!-- HTML、CSS、JavaScriptを一つのファイルに記述して「.vue」という拡張子をつけものです。 -->
-
-
-<!-- 独自形式なため、Webpackなどのモジュールバンドラーを利用して、実行前にJavaScriptに変換する必要があります。 -->
-
-
-<!-- その他特徴を列挙する -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h2 id="sfc-&#x3067;-hello-world">SFC &#x3067; Hello World</h2><!-- Webpackを利用してHelloWorldを出す。（可能な限り最小のコード） -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h1 id="vuejs-&#x3067;-api-&#x901A;&#x4FE1;">Vue.js &#x3067; API &#x901A;&#x4FE1;</h1><h2 id="axios-&#x3092;&#x5229;&#x7528;&#x3057;&#x305F;-api-&#x901A;&#x4FE1;">axios &#x3092;&#x5229;&#x7528;&#x3057;&#x305F; API &#x901A;&#x4FE1;</h2><!-- axiosの説明 -->
-
-
-<p>TODO &#x66F8;&#x304F;</p><h2 id="&#x5229;&#x7528;&#x4F8B;">&#x5229;&#x7528;&#x4F8B;</h2><!-- new Vue()で利用した例を簡単なサンプルコードにする -->
-
-
-<!-- mountedで非同期通信するという説明も書く -->
-
-
-<p>TODO &#x66F8;&#x304F;</p>
+                                <h1 id="&#x7DF4;&#x7FD2;&#x554F;&#x984C;-2">&#x7DF4;&#x7FD2;&#x554F;&#x984C; 2</h1>
                                 
                                 </section>
                             
@@ -579,12 +488,12 @@ TODO &#x66F8;&#x304F;</p><h1 id="&#x30E9;&#x30A4;&#x30D5;&#x30B5;&#x30A4;&#x30AF
 
             
                 
-                <a href="00_introduction.html" class="navigation navigation-prev " aria-label="Previous page: Vue.js とは">
+                <a href="02_problem1.html" class="navigation navigation-prev " aria-label="Previous page: 練習問題 1">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="01_guide.html#Vue.js の導入" class="navigation navigation-next " aria-label="Next page: Vue.js の導入">
+                <a href="../vuejs-spa/introduction.html" class="navigation navigation-next " aria-label="Next page: SPA とは">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -595,7 +504,7 @@ TODO &#x66F8;&#x304F;</p><h1 id="&#x30E9;&#x30A4;&#x30D5;&#x30B5;&#x30A4;&#x30AF
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vue.js 基礎","level":"2.2","depth":1,"next":{"title":"Vue.js の導入","level":"2.2.1","depth":2,"anchor":"#Vue.js の導入","path":"vuejs-guide/01_guide.md","ref":"vuejs-guide/01_guide.md#Vue.js の導入","articles":[]},"previous":{"title":"Vue.js とは","level":"2.1","depth":1,"path":"vuejs-guide/00_introduction.md","ref":"vuejs-guide/00_introduction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false}},"file":{"path":"vuejs-guide/01_guide.md","mtime":"2020-07-03T00:08:58.141Z","type":"markdown"},"gitbook":{"version":"3.5.0","time":"2020-07-05T13:12:31.786Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"練習問題 2","level":"2.4","depth":1,"next":{"title":"SPA とは","level":"3.1","depth":1,"path":"vuejs-spa/introduction.md","ref":"vuejs-spa/introduction.md","articles":[]},"previous":{"title":"練習問題 1","level":"2.3","depth":1,"path":"vuejs-guide/02_problem1.md","ref":"vuejs-guide/02_problem1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false}},"file":{"path":"vuejs-guide/03_problem2.md","mtime":"2020-07-03T00:20:21.539Z","type":"markdown"},"gitbook":{"version":"3.5.0","time":"2020-07-05T13:12:31.786Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
